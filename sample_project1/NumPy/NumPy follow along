@@ -115,14 +115,194 @@
     "<h2>Notes</h2>\n",
     "<ul>\n",
     "    <li><b>Main datatype: </b> The main datatype is ndarray</li>\n",
-    "    <li><b>ndarray (n-dimensional array):</b> </li>\n",
-    "</ul>"
+    "    <li><b>ndarray (n-dimensional array):</b> n-dimensions indicate it can be any shape you can imagine and array's can be a list of numbers too.\n",
+    "    </li>\n",
+    "    <li><b>numpy.shape</b> can be shown as it is here</li>\n",
+    "</ul>\n",
+    "![anatomy of a numpy array](C:\\Users\\marka\\ZTM\\ZTM_AI\\capstone_project\\sample_project1\\NumPy\\anatomy-of-a-numpy-array.png)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "44dec213-d871-43b5-a7a2-3eec78fdabc7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 2, 3])"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# ndarray demo\n",
+    "a1 = np.array([1, 2, 3])  # pass a list of numbers\n",
+    "a1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "6302c927-b631-457e-8eed-fc5c5c37182a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "numpy.ndarray"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "097eca50-bcc1-4ddf-a5cf-22b0dd7fbbbf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a2 = np.array([\n",
+    "                [1, 2.0, 3.3], \n",
+    "                [4, 5, 6.5]\n",
+    "            ])\n",
+    "\n",
+    "a3 = np.array([[[1, 2, 3],\n",
+    "                [4, 5, 6]],\n",
+    "               [[7, 8, 9],\n",
+    "                [10, 11, 12]],\n",
+    "               [[13, 14, 15],\n",
+    "                [16, 17, 18]]])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "f32899fd-147d-4df9-b23a-91e390c8e82b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1. , 2. , 3.3],\n",
+       "       [4. , 5. , 6.5]])"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "567aadc8-3a84-4707-ae65-fbc4ba1b54a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[ 1,  2,  3],\n",
+       "        [ 4,  5,  6]],\n",
+       "\n",
+       "       [[ 7,  8,  9],\n",
+       "        [10, 11, 12]],\n",
+       "\n",
+       "       [[13, 14, 15],\n",
+       "        [16, 17, 18]]])"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "1bc8fd50-8558-42d4-b95b-801d6523c378",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(3,)"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " a1.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "68ca0be9-80c5-48fc-8dcc-2245fda62bea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3)"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a2.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "88e74fec-835f-48bf-9ca4-28d9acc9c14b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(3, 2, 3)"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a3.shape"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "44dec213-d871-43b5-a7a2-3eec78fdabc7",
+   "id": "e96a4956-b647-4293-b7f7-9ff084465f98",
    "metadata": {},
    "outputs": [],
    "source": []
