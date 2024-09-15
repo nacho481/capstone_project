@@ -69,16 +69,63 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 4,
    "id": "aa3c1a60-a0a4-4bf8-acdf-bf2e2ee55359",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a + b = [1 2 3 4] + [10] = [11 12 13 14]\n"
+     ]
+    }
+   ],
    "source": [
     "a = np.array([1, 2, 3, 4])\n",
     "b = np.array([10])\n",
     "c = a + b  # b is broadcast to match a's shape\n",
-    "# c becomes [11, 12, 13, 14]"
+    "# c becomes [11, 12, 13, 14]\n",
+    "print(f'a + b = {a} + {b} = {c}')"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "94d28730-c051-43b1-80fb-13a72cd220f1",
+   "metadata": {},
+   "source": [
+    "<h2>ufun - universal functions</h2>\n",
+    "<p>A ufunc is a function that operates element-wise on array inputs. These functions are vectorized and optimized for performance. NumPy provides many built-in ufuncs, and you can also create custom ones.</p>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0d4bacde-c140-425e-8387-793f8ef872f9",
+   "metadata": {},
+   "source": [
+    "<h2>Follow along</h2>\n",
+    "<p>We will follow along now with the ZTM's introduction to AI course. Everything above was based on a conversation I had with Claude AI.</p>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6624fb59-0547-4ae1-a1c5-30c9a139fedf",
+   "metadata": {},
+   "source": [
+    "<h2>Notes</h2>\n",
+    "<ul>\n",
+    "    <li><b>Main datatype: </b> The main datatype is ndarray</li>\n",
+    "    <li><b>ndarray (n-dimensional array):</b> </li>\n",
+    "</ul>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "44dec213-d871-43b5-a7a2-3eec78fdabc7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
